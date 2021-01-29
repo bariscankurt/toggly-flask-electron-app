@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+  <script src="jquery-3.5.1.js"></script>
+  <script>if (window.module) module = window.module;</script>
+  <script>
+    $(document).ready(function info(){
+      
+        $('#name2').fadeIn(1500,function(){
+          $('#name2').fadeOut(1500,function(){
+            $('#name3').fadeIn(1500,function(){
+              $('#name3').fadeOut(1500,function(){
+                $('#name4').fadeIn(1500,function(){
+                  $('#name4').fadeOut(1500)
+                });
+              });
+            });
+          });
+        });
+        setInterval(info,9500)
+    })
+    
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/js/bootstrap.min.js">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <title>Deneme</title>
+  <style>
+    body{
+      background-color: #dad6d6;
+      width: 100%;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 70px;
+    }
+    #parent{
+      width:600px;
+      background-color: #222831;
+      height: 300px;
+      border-radius: 30px;
+      padding: 20px;
+    }
+    #child{
+      background-color: #393e46;
+      width: 48%;
+      height: 100%;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      margin-right: 5px;
+    }
+
+    h1{
+      color:#EAEAEA;
+    }
+    .container{
+      
+      width: 50%;
+      height: 100%;
+      border-radius: 30px;
+      float: left;
+      
+    }
+    .word{
+      float: left;
+    }
+    .row{
+      border-radius: 25px;
+    }
+    .second{
+      margin-top: 20px;
+      background-color: #2b2e4a;
+      transition: 1s;
+      width: 15%;
+      height: 50px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .second:hover{
+      background-color: #4f5586;
+      transform: scale(1.1);
+    }
+    .link{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="parent">
+    <div id="child" style="display:flex; justify-content: center; align-items: center;">
+      
+      <h1 id="name2"  style="display:none">toggly.</h1>
+      <h4 id="name3" style="display:none; color: white;">The easiest way</h4>
+      <h4 id="name4" style="display:none; color: white;">for data transfer.</h4>
+      
+    </div>
+    <div class="container">
+      <div class="row" style="height: 24%">
+        <div class="col-md-5" style="display:flex; justify-content: center; align-items: center;">
+          <img   src="static/icons/baseline_speed_white_18dp.png" width="50px" height="50px" alt="">
+        </div>
+        <div class="col-md-7" style="display:flex; justify-content: center; align-items: center;">
+          <h4  style="color: #EAEAEA; ">FAST</h4>
+        </div>
+      </div>
+      <div style="height: 1%"></div>
+      <div class="row" style="height: 24%">
+        <div class="col-md-5" style="display:flex; justify-content: center; align-items: center;">
+          <img   src="static/icons/functional.png" width="50px" height="50px" alt="">
+        </div>
+        <div class="col-md-7" style="display:flex; justify-content: center; align-items: center;">
+          <h4 class="col-md-7" style="color: #EAEAEA; display:flex; justify-content: center; align-items: center;">FUNCTIONAL</h4>
+        </div>
+      </div>
+      <div style="height: 1%"></div>
+      <div class="row" style="height: 24%">
+        <div class="col-md-5" style="display:flex; justify-content: center; align-items: center;">
+          <img   src="static/icons/simple.png" width="50px" height="50px" alt="">
+        </div>
+        <div class="col-md-7" style="display:flex; justify-content: center; align-items: center;">
+          <h4 class="col-md-7" style="color: #EAEAEA; display:flex; justify-content: center; align-items: center;">SIMPLE</h4>
+        </div>
+      </div>
+      <div style="height: 1%"></div>
+      <div class="row" style="height: 24%">
+        <div class="col-md-5" style="display:flex; justify-content: center; align-items: center;">
+          <img   src="static/icons/secure2.png" width="50px" height="50px" alt="">
+        </div>
+        <div class="col-md-7" style="display:flex; justify-content: center; align-items: center;">
+          <h4 class="col-md-7" style="color: #EAEAEA; display:flex; justify-content: center; align-items: center;">SECURE</h4>
+        </div>
+      </div>
+      <div style="height: 1%"></div>
+    </div>
+  </div>
+  <div class="second" onclick="location.href = 'http://127.0.0.1:5000';">
+    <a class="link" href="" style="color: white;">START</a>
+  </div>
+  
+  
+  
+</body>
+</html>
